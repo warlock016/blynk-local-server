@@ -11,17 +11,17 @@ Configuration Steps for getting Blynk Server to work locally on RPi Zero W
 
 5. Create self-signed OpenSSL certificates:
 
-    a. Run:   openssl req -x509 -nodes -days 1825 -newkey rsa:2048 -keyout server.key -out server.crt
+    a. Run:   openssl req -x509 -nodes -days 1825 -newkey rsa:2048 -keyout server.key -out server.crt <br/>
     b. Afterwards, run: openssl pkcs8 -topk8 -v1 PBE-SHA1-2DES -in server.key -out server.enc.key
     
-6. Pull server.config and mail.config from locations: 
-      https://github.com/blynkkk/blynk-server/blob/master/server/core/src/main/resources/server.properties
-      https://github.com/blynkkk/blynk-server/blob/master/server/notifications/email/src/main/resources/mail.properties
+6. Pull server.config and mail.config from locations: <br/>
+      https://github.com/blynkkk/blynk-server/blob/master/server/core/src/main/resources/server.properties <br/>
+      https://github.com/blynkkk/blynk-server/blob/master/server/notifications/email/src/main/resources/mail.properties<br/>
       
-7. In server.properties, add generated *.crt and *.enc.key paths to 
-    server.ssl.cert=/.../...
-    server.ssl.key=/.../...
-    server.ssl.key.pass=/...
+7. In server.properties, add generated *.crt and *.enc.key paths to \
+    server.ssl.cert = /.../... \
+    server.ssl.key=/.../... \
+    server.ssl.key.pass=/... \
 
 8. In server.properties, configure server host with local server IP.
 
