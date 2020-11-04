@@ -1,5 +1,5 @@
 # blynk-local-server
-Configuration Steps for getting to work Blynk Server locally on RPi ZeroW
+Configuration Steps for getting Blynk Server to work locally on RPi Zero W
 
 1. Create folder to contain all server files. (eg. /Blynk)
 
