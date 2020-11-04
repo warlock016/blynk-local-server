@@ -21,7 +21,7 @@ Configuration Steps for getting Blynk Server to work locally on RPi Zero W
 7. In server.properties, add generated *.crt and *.enc.key paths to \
     server.ssl.cert = /.../... \
     server.ssl.key=/.../... \
-    server.ssl.key.pass=/... \
+    server.ssl.key.pass=/... 
 
 8. In server.properties, configure server host with local server IP.
 
